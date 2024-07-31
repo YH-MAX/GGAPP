@@ -1,0 +1,6 @@
+@GGAppBackend_HostAddress = http://localhost:5209
+
+GET {{GGAppBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

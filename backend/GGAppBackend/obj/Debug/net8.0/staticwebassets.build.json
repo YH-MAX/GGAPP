@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "MKIr7fwf6GJzXzT5fleBcWZ9sqWgVpLoxGwslB3cgCk=",
+  "Source": "GGAppBackend",
+  "BasePath": "_content/GGAppBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
