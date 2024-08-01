@@ -32,3 +32,4 @@ C:\Users\Kieran\Documents\GlyphGrid\GGApp\backend\GGAppBackend\obj\Debug\net8.0\
 C:\Users\Kieran\Documents\GlyphGrid\GGApp\backend\GGAppBackend\obj\Debug\net8.0\GGAppBackend.pdb
 C:\Users\Kieran\Documents\GlyphGrid\GGApp\backend\GGAppBackend\obj\Debug\net8.0\GGAppBackend.genruntimeconfig.cache
 C:\Users\Kieran\Documents\GlyphGrid\GGApp\backend\GGAppBackend\obj\Debug\net8.0\ref\GGAppBackend.dll
+C:\Users\Kieran\Documents\GlyphGrid\GGApp\backend\GGAppBackend\obj\Debug\net8.0\GGAppBackend.sourcelink.json

@@ -14,18 +14,18 @@ pipeline {
     stages {
         stage('Clone repository') {
             steps {
-				checkout scmGit(branches: [[name: env.BRANCH_NAME]], extensions: [], userRemoteConfigs: [[credentialsId: 'github-app-quasarpoint', url: 'https://github.com/Kieran-EC/QuasarPoint.git']])
+				checkout scmGit(branches: [[name: env.BRANCH_NAME]], extensions: [], userRemoteConfigs: [[credentialsId: 'ggjenkinsbuild', url: 'https://github.com/GlyphGrid/GGApp_Test.git']])
             }
         }
         
         stage('Install dependencies') {
             steps {
 				sh 'npm install -g yarn'
-                dir(env.WORKSPACE + '/frontend/QPAppFrontend') {
+                dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
                     sh 'yarn install'
                 }
 				dir(env.WORKSPACE + '/backend') {
-					sh 'dotnet restore QPAppBackend'
+					sh 'dotnet restore GGAppBackend'
 				}
             }
         }
@@ -34,7 +34,7 @@ pipeline {
             parallel {
                 stage('Frontend Tests') {
                     steps {
-                        dir(env.WORKSPACE + '/frontend/QPAppFrontend') {
+                        dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
                             sh 'yarn test'
                         }
                     }
@@ -43,7 +43,7 @@ pipeline {
                 stage('Backend Tests') {
                     steps {
                         dir(env.WORKSPACE + '/backend') {
-                            sh 'dotnet test QPAppBackend.Tests'
+                            sh 'dotnet test GGAppBackend.Tests'
                         }
                     }
                 }
