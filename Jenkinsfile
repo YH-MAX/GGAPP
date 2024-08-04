@@ -2,12 +2,12 @@ pipeline {
 
 	environment {
         NODE_VERSION = '22.5.0'
-        DOCKER_IMAGE = 'kieranec/quasarpoint:0.0.6'
+        DOCKER_IMAGE = 'kieranec/quasarpoint:0.0.7'
     }
 
 	agent {
 		docker { 
-			image 'kieranec/quasarpoint:0.0.6'
+			image 'kieranec/quasarpoint:0.0.7'
 		}
 	}
 

@@ -1,5 +1,5 @@
 FROM ubuntu:24.04
-RUN apt-get update && apt-get install -y curl unzip git dotnet-sdk-8.0 openjdk-17-jre
+RUN apt-get update && apt-get install -y curl unzip git dotnet-sdk-8.0 openjdk-17-jre sudo
 ARG NVM_DIR_ARG=/opt/.nvm
 RUN mkdir $NVM_DIR_ARG
 RUN chmod 777 $NVM_DIR_ARG
