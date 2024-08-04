@@ -44,7 +44,6 @@ pipeline {
 			steps {
 				dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
 					sh 'yarn --version'
-					sh 'yarn install --ignore-scripts'
 					sh 'yarn install --verbose'
 					sh 'yarn build'
 				}
