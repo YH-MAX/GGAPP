@@ -2,7 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { getWeatherForecast, WeatherForecast } from '../services/WeatherService';
 
-const WeatherForecastComponent: React.FC = () => {
+interface WeatherForecastComponentProps {
+	testID?: string;
+}
+
+const WeatherForecastComponent: React.FC<WeatherForecastComponentProps> = ({ testID }) => {
   const [weather, setWeather] = useState<WeatherForecast | null>(null);
 
   useEffect(() => {
@@ -19,10 +23,10 @@ const WeatherForecastComponent: React.FC = () => {
   }
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Tomorrow's Weather</Text>
-      <Text style={styles.summary}>{weather.summary}</Text>
-      <Text style={styles.temperature}>Temperature: {weather.temperatureC}°C / {weather.temperatureF}°F</Text>
+    <View style={styles.container} testID={testID}>
+      <Text style={styles.title} testID={`${testID}-title`}>Tomorrow's Weather</Text>
+      <Text style={styles.summary} testID={`${testID}-summary`}>{weather.summary}</Text>
+      <Text style={styles.temperature} testID={`${testID}-temp`}>Temperature: {weather.temperatureC}°C / {weather.temperatureF}°F</Text>
     </View>
   );
 };

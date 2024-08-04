@@ -984,11 +984,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kieran\\Documents\\GlyphGrid\\GGApp\\backend\\GGAppBackend\\GGAppBackend.csproj",
+      "projectUniqueName": "C:\\Users\\Kieran\\Documents\\GlyphGrid\\GGApp_Test\\backend\\GGAppBackend\\GGAppBackend.csproj",
       "projectName": "GGAppBackend",
-      "projectPath": "C:\\Users\\Kieran\\Documents\\GlyphGrid\\GGApp\\backend\\GGAppBackend\\GGAppBackend.csproj",
+      "projectPath": "C:\\Users\\Kieran\\Documents\\GlyphGrid\\GGApp_Test\\backend\\GGAppBackend\\GGAppBackend.csproj",
       "packagesPath": "C:\\Users\\Kieran\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kieran\\Documents\\GlyphGrid\\GGApp\\backend\\GGAppBackend\\obj\\",
+      "outputPath": "C:\\Users\\Kieran\\Documents\\GlyphGrid\\GGApp_Test\\backend\\GGAppBackend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

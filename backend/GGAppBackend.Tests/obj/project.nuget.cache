@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j0YbOxHMYNI=",
+  "dgSpecHash": "dOw4fw4uaDM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kieran\\Documents\\GlyphGrid\\GGApp\\backend\\GGAppBackend.Tests\\GGAppBackend.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Kieran\\Documents\\GlyphGrid\\GGApp_Test\\backend\\GGAppBackend.Tests\\GGAppBackend.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kieran\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\Kieran\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",

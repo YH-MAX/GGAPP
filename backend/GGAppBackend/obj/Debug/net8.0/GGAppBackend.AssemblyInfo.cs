@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GGAppBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75114133ceb33673ec158833a71cfd2d4d525102")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c61fe9f5479d97098174f89f0a4b9d0929234631")]
 [assembly: System.Reflection.AssemblyProductAttribute("GGAppBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GGAppBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
