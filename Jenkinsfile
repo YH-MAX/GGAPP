@@ -40,12 +40,32 @@ pipeline {
 			}
 		}
 
+		stage('Debug 2') {
+			steps {
+				dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
+					sh 'yarn install'
+				}
+
+				dir(env.WORKSPACE + '/backend') {
+					sh 'dotnet build GGAppBackend.Tests'
+				}
+			}
+		}
+
+		stage('Debug 3') {
+			steps('Debug node_modules') {
+				dir(env.WORKSPACE) {
+					sh 'tree -L 3 .'
+				}
+			}
+		}
+
         //stage('Build and Test') {
             //parallel {
                 stage('Frontend Tests') {
                     steps {
                         dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
-							sh 'yarn install'
+							//sh 'yarn install'
                             sh 'yarn test'
                         }
                     }
@@ -54,7 +74,7 @@ pipeline {
                 stage('Backend Tests') {
                     steps {
                         dir(env.WORKSPACE + '/backend') {
-							sh 'dotnet build GGAppBackend.Tests'
+							//sh 'dotnet build GGAppBackend.Tests'
                             sh 'dotnet test GGAppBackend.Tests'
                         }
                     }
