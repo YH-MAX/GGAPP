@@ -44,6 +44,7 @@ pipeline {
 			steps {
 				dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
 					sh 'yarn install'
+					sh 'yarn build'
 				}
 
 				//dir(env.WORKSPACE + '/backend') {
