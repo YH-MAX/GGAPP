@@ -35,7 +35,7 @@ pipeline {
 		stage('Debug') {
 			steps('Debug node_modules') {
 				dir(env.WORKSPACE) {
-					sh 'tree -L 3 .'
+					sh 'tree -L 4 .'
 				}
 			}
 		}
@@ -55,7 +55,7 @@ pipeline {
 		stage('Debug 3') {
 			steps('Debug node_modules') {
 				dir(env.WORKSPACE) {
-					sh 'tree -L 3 .'
+					sh 'tree -L 4 .'
 				}
 			}
 		}
