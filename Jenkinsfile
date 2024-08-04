@@ -22,6 +22,7 @@ pipeline {
             steps {
 				sh 'npm install -g yarn'
                 dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
+					sh 'apt-get install tree'
 					sh 'corepack enable'
 					sh 'yarn config set nodeLinker node-modules'
                     sh 'yarn install'
@@ -31,6 +32,14 @@ pipeline {
 				}
             }
         }
+
+		stage('Debug') {
+			steps('Debug node_modules') {
+				dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
+					sh 'tree .'
+				}
+			}
+		}
 
         stage('Build and Test') {
             parallel {
