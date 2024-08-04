@@ -102,6 +102,7 @@
 # Node.js Tools for Visual Studio
 **/.ntvs_analysis.dat
 **/node_modules/
+!**/node_modules/.yarn-state.yml
 
 # Local History for Visual Studio
 **/.localhistory/
