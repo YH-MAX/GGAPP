@@ -32,13 +32,13 @@ pipeline {
             }
         }
 
-		// stage('Debug') {
-		// 	steps('Debug node_modules') {
-		// 		dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
-		// 			sh 'tree .'
-		// 		}
-		// 	}
-		// }
+		stage('Debug') {
+			steps('Debug node_modules') {
+				dir(env.WORKSPACE) {
+					sh 'tree -L 3 .'
+				}
+			}
+		}
 
         //stage('Build and Test') {
             //parallel {
