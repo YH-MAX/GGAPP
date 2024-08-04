@@ -40,7 +40,7 @@ pipeline {
 		// 	}
 		// }
 
-        stage('Build and Test') {
+        //stage('Build and Test') {
             //parallel {
                 stage('Frontend Tests') {
                     steps {
@@ -60,7 +60,7 @@ pipeline {
                     }
                 }
             //}
-        }
+        //}
     }
 
     post {
