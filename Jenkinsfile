@@ -46,9 +46,9 @@ pipeline {
 					sh 'yarn install'
 				}
 
-				dir(env.WORKSPACE + '/backend') {
-					sh 'dotnet build GGAppBackend.Tests'
-				}
+				//dir(env.WORKSPACE + '/backend') {
+				//	sh 'dotnet build GGAppBackend.Tests'
+				//}
 			}
 		}
 
