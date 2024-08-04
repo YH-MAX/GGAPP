@@ -41,7 +41,7 @@ pipeline {
 		// }
 
         stage('Build and Test') {
-            parallel {
+            //parallel {
                 stage('Frontend Tests') {
                     steps {
                         dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
@@ -59,7 +59,7 @@ pipeline {
                         }
                     }
                 }
-            }
+            //}
         }
     }
 
