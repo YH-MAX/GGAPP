@@ -22,6 +22,7 @@ pipeline {
             steps {
 				sh 'npm install -g yarn'
                 dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
+					sh 'yarn config set nodeLinker node-modules'
                     sh 'yarn install'
                 }
 				dir(env.WORKSPACE + '/backend') {
