@@ -25,7 +25,6 @@ pipeline {
 					sh 'sudo apt-get install tree'
 					sh 'corepack enable'
 					sh 'yarn config set nodeLinker node-modules'
-                    sh 'yarn install'
                 }
 				dir(env.WORKSPACE + '/backend') {
 					sh 'dotnet restore GGAppBackend'
@@ -33,19 +32,20 @@ pipeline {
             }
         }
 
-		stage('Debug') {
-			steps('Debug node_modules') {
-				dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
-					sh 'tree .'
-				}
-			}
-		}
+		// stage('Debug') {
+		// 	steps('Debug node_modules') {
+		// 		dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
+		// 			sh 'tree .'
+		// 		}
+		// 	}
+		// }
 
         stage('Build and Test') {
             parallel {
                 stage('Frontend Tests') {
                     steps {
                         dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
+							sh 'yarn install'
                             sh 'yarn test'
                         }
                     }
@@ -54,6 +54,7 @@ pipeline {
                 stage('Backend Tests') {
                     steps {
                         dir(env.WORKSPACE + '/backend') {
+							sh 'dotnet build GGAppBackend.Tests'
                             sh 'dotnet test GGAppBackend.Tests'
                         }
                     }
