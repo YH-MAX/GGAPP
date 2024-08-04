@@ -23,7 +23,6 @@ pipeline {
 				sh 'npm install -g yarn'
                 dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
 					sh 'corepack enable'
-					sh 'yarn set version stable'
 					sh 'yarn config set nodeLinker node-modules'
                     sh 'yarn install'
                 }
