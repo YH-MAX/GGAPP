@@ -22,7 +22,7 @@ pipeline {
             steps {
 				sh 'npm install -g yarn'
                 dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
-					sh 'apt-get install tree'
+					sh 'sudo apt-get install tree'
 					sh 'corepack enable'
 					sh 'yarn config set nodeLinker node-modules'
                     sh 'yarn install'
