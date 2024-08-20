@@ -1,13 +1,13 @@
 pipeline {
 
 	environment {
-        NODE_VERSION = '22.5.0'
-        DOCKER_IMAGE = 'kieranec/quasarpoint:0.0.7'
+        NODE_VERSION = '22.5.1'
+        DOCKER_IMAGE = 'kieranec/quasarpoint:0.0.8'
     }
 
 	agent {
 		docker { 
-			image 'kieranec/quasarpoint:0.0.7'
+			image 'kieranec/quasarpoint:0.0.8'
 		}
 	}
 
@@ -22,66 +22,48 @@ pipeline {
             steps {
 				sh 'npm install -g yarn'
                 dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
-					sh 'sudo apt-get install tree'
+					sh 'sudo apt-get install tree -y'
 					sh 'corepack enable'
-					sh 'yarn config set nodeLinker node-modules'
+					sh 'yes | yarn config set nodeLinker node-modules'
                 }
 				dir(env.WORKSPACE + '/backend') {
 					sh 'dotnet restore GGAppBackend'
 				}
-            }
-        }
-
-		stage('Debug') {
-			steps('Debug node_modules') {
-				dir(env.WORKSPACE) {
-					sh 'tree -L 4 .'
-				}
 			}
 		}
 
-		stage('Debug 2') {
+		stage('Build Frontend') {
 			steps {
 				dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
 					sh 'yarn --version'
-					sh 'yarn install'
-				}
-
-				//dir(env.WORKSPACE + '/backend') {
-				//	sh 'dotnet build GGAppBackend.Tests'
-				//}
-			}
-		}
-
-		stage('Debug 3') {
-			steps('Debug node_modules') {
-				dir(env.WORKSPACE) {
-					sh 'tree -L 4 .'
+					sh 'yarn cache clean && yarn install'
 				}
 			}
 		}
 
-        //stage('Build and Test') {
-            //parallel {
-                stage('Frontend Tests') {
-                    steps {
-                        dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
-							//sh 'yarn install'
-                            sh 'yarn test'
-                        }
-                    }
-                }
+		stage('Build Backend') {
+			steps {
+				dir(env.WORKSPACE + '/backend') {
+					sh 'dotnet msbuild GGAppBackend.Tests -property:Configuration=Release'
+				}
+			}
+		}
 
-                stage('Backend Tests') {
-                    steps {
-                        dir(env.WORKSPACE + '/backend') {
-							//sh 'dotnet build GGAppBackend.Tests'
-                            sh 'dotnet test GGAppBackend.Tests'
-                        }
-                    }
-                }
-            //}
-        //}
+		stage('Frontend Tests') {
+			steps {
+				dir(env.WORKSPACE + '/frontend/GGAppFrontend') {
+					sh 'yarn test'
+				}
+			}
+		}
+
+		stage('Backend Tests') {
+			steps {
+				dir(env.WORKSPACE + '/backend') {
+					sh 'dotnet test GGAppBackend.Tests'
+				}
+			}
+		}
     }
 
     post {

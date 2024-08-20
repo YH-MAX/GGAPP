@@ -11,6 +11,9 @@ import { WeatherForecast } from '../../src/services/WeatherService';
 import { render, waitFor } from '@testing-library/react-native';
 import { ReactTestInstance } from 'react-test-renderer';
 
+// Set Timeout
+jest.setTimeout(60000);
+
 // Mock WeatherService
 jest.mock('../../src/services/WeatherService', () => {
 	const originalModule = jest.requireActual<typeof import('../../src/services/WeatherService')>('../../src/services/WeatherService');

@@ -12,13 +12,18 @@ import { WeatherForecast, getWeatherForecast } from '../../src/services/WeatherS
 jest.mock('axios');
 const mockedAxios = axios as jest.Mocked<typeof axios>;
 
+// Mock Date
+jest
+  .useFakeTimers()
+  .setSystemTime(new Date('2024-08-04'));
+
 // Test that weather forecast data is rendered correctly
 describe('WeatherService', () => {
 	test('Generates WeatherForecast Object', async () => {
 
 		// Ensure that at least one assertion is called
 		expect.assertions(1);
-
+		
 		mockedAxios.get.mockResolvedValue({
 			data: [
 				{
@@ -51,7 +56,11 @@ describe('WeatherService', () => {
 				  "temperatureF": 42,
 				  "summary": "Freezing"
 				}
-			  ]
+			  ],
+			status: 200,
+			statusText: 'Ok',
+			headers: {},
+			config: {},
 		});
 
 		const expected: WeatherForecast = {
