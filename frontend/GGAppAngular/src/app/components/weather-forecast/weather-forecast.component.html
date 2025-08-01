@@ -1,0 +1,104 @@
+<div class="weather-forecast-container">
+  <div class="weather-header">
+    <h2>Weather Forecast</h2>
+    <button 
+      class="btn btn-primary refresh-btn" 
+      (click)="refreshData()"
+      [disabled]="isLoading()">
+      @if (isLoading()) {
+        <span class="spinner"></span>
+        Loading...
+      } @else {
+        🔄 Refresh
+      }
+    </button>
+  </div>
+
+  <!-- Loading State -->
+  @if (isLoading() && !hasForecasts()) {
+    <div class="loading-container">
+      <div class="spinner large-spinner"></div>
+      <p>Loading weather forecast...</p>
+    </div>
+  }
+
+  <!-- Error State -->
+  @if (hasError()) {
+    <div class="error-container card">
+      <div class="error-content">
+        <h3>⚠️ Weather Service Error</h3>
+        <p>{{ error() }}</p>
+        <div class="error-actions">
+          <button class="btn btn-primary" (click)="refreshData()">
+            Try Again
+          </button>
+          <button class="btn btn-secondary" (click)="clearError()">
+            Dismiss
+          </button>
+        </div>
+      </div>
+    </div>
+  }
+
+  <!-- Empty State -->
+  @if (isEmpty()) {
+    <div class="empty-container card">
+      <div class="empty-content">
+        <h3>📊 No Weather Data</h3>
+        <p>No weather forecast data is currently available.</p>
+        <button class="btn btn-primary" (click)="loadWeatherData()">
+          Load Weather Data
+        </button>
+      </div>
+    </div>
+  }
+
+  <!-- Weather Forecast Grid -->
+  @if (hasForecasts()) {
+    <div class="forecast-grid">
+      @for (forecast of forecasts(); track forecast.date) {
+        <div class="forecast-card card">
+          <div class="forecast-date">
+            <h4>{{ formatDate(forecast.date) }}</h4>
+          </div>
+          
+          <div class="forecast-content">
+            <div class="temperature-section">
+              <div class="temperature-main">
+                <span 
+                  class="temperature-value"
+                  [style.color]="getTemperatureColor(forecast.temperatureC)">
+                  {{ forecast.temperatureC }}°C
+                </span>
+                <span class="temperature-fahrenheit">
+                  {{ forecast.temperatureF }}°F
+                </span>
+              </div>
+            </div>
+            
+            <div class="summary-section">
+              @if (forecast.summary) {
+                <div class="weather-summary">
+                  <span class="summary-text">{{ forecast.summary }}</span>
+                </div>
+              } @else {
+                <div class="weather-summary">
+                  <span class="summary-text text-disabled">No summary available</span>
+                </div>
+              }
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  }
+
+  <!-- Footer Info -->
+  @if (hasForecasts()) {
+    <div class="forecast-footer">
+      <p class="text-secondary">
+        Showing {{ forecasts().length }} day{{ forecasts().length !== 1 ? 's' : '' }} forecast
+      </p>
+    </div>
+  }
+</div>
