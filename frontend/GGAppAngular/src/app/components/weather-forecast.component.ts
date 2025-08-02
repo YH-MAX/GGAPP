@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { WeatherService } from '../../services/weather.service';
+import { WeatherService } from '../services/weather.service';
 
 @Component({
   selector: 'app-weather-forecast',

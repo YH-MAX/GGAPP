@@ -1,3 +1,4 @@
+// NOTE: Ensure your tsconfig.json includes "ES2015" or later in the "lib" array for Promise support.
 // src/services/WeatherService.ts
 
 import axios from 'axios';

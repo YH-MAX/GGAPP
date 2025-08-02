@@ -1,11 +1,11 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { WeatherForecastComponent } from './components/weather-forecast/weather-forecast.component';
+import { WeatherForecastComponent } from './components/weather-forecast.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, WeatherForecastComponent],
+  imports: [RouterOutlet,  WeatherForecastComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush
