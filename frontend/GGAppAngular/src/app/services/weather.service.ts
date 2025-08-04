@@ -11,7 +11,7 @@ export class WeatherService {
   private readonly http = inject(HttpClient);
   
   // API Configuration
-  private readonly apiUrl = 'http://localhost:5209/WeatherForecast';
+  private readonly apiUrl = 'http://localhost:5209/api/WeatherForecast';
   
   // Signal-based state management
   private readonly _forecasts = signal<WeatherForecast[]>([]);
