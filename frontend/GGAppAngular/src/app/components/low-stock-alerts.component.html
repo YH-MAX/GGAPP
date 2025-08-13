@@ -1,0 +1,17 @@
+<!-- Low Stock Alerts component template -->
+<div class="low-stock-alerts">
+  <h2>Low Stock Alerts</h2>
+  <div *ngIf="loading" class="loading">Loading...</div>
+  <div *ngIf="error" class="error">{{ error }}</div>
+  <ul *ngIf="!loading && !error">
+    <li *ngFor="let alert of lowStockAlerts$ | async" class="alert-item">
+      <strong>{{ alert.productName }}</strong> (ID: {{ alert.productId }})<br>
+      Stock: <span [class.low]="alert.stock <= alert.lowStockThreshold">{{ alert.stock }}</span> / Threshold: {{ alert.lowStockThreshold }}
+    </li>
+    <li *ngIf="(lowStockAlerts$ | async) as alerts">
+      <ng-container *ngIf="alerts && alerts.length === 0">
+        No low stock alerts.
+      </ng-container>
+    </li>
+  </ul>
+</div>

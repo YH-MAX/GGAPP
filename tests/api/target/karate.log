@@ -58,3 +58,1939 @@ src/WeatherForecast.feature:6
 [{"date":"2024-08-01","temperatureC":-10,"temperatureF":15,"summary":"Warm"},{"date":"2024-08-02","temperatureC":-2,"temperatureF":29,"summary":"Freezing"},{"date":"2024-08-03","temperatureC":1,"temperatureF":33,"summary":"Sweltering"},{"date":"2024-08-04","temperatureC":35,"temperatureF":94,"summary":"Balmy"},{"date":"2024-08-05","temperatureC":29,"temperatureF":84,"summary":"Warm"}]
 
 23:26:41.493 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/WeatherForecast.feature
+11:55:55.180 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+11:55:55.549 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755057355547
+11:55:56.834 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5209/api/WeatherForecast
+1 > Host: localhost:5209
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:55:56.867 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 284 milliseconds for url: http://localhost:5209/api/WeatherForecast
+11:55:56.871 [main]  ERROR com.intuit.karate - src/WeatherForecast.feature:5
+When method get
+http call failed after 284 milliseconds for url: http://localhost:5209/api/WeatherForecast
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/WeatherForecast.feature:5
+11:55:57.416 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/WeatherForecast.feature
+11:57:28.364 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+11:57:28.648 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755057448645
+11:57:29.856 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:57:29.919 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 397 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts
+11:57:29.933 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:5
+When method GET
+http call failed after 397 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:5
+11:57:30.003 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:57:30.023 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 20 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts
+11:57:30.024 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:13
+When method GET
+http call failed after 20 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:13
+11:57:30.037 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:57:30.057 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 21 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts-invalid
+11:57:30.059 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:19
+When method GET
+http call failed after 21 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts-invalid
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:19
+11:57:30.969 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+11:57:30.975 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5209/api/WeatherForecast
+1 > Host: localhost:5209
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:57:31.005 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 31 milliseconds for url: http://localhost:5209/api/WeatherForecast
+11:57:31.005 [main]  ERROR com.intuit.karate - src/WeatherForecast.feature:5
+When method get
+http call failed after 31 milliseconds for url: http://localhost:5209/api/WeatherForecast
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/WeatherForecast.feature:5
+11:57:31.050 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+11:57:31.051 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+11:59:42.105 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+11:59:42.399 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755057582397
+11:59:43.529 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:59:43.558 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 254 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts
+11:59:43.563 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:5
+When method GET
+http call failed after 254 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:5
+11:59:43.575 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:59:43.580 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 6 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts
+11:59:43.580 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:13
+When method GET
+http call failed after 6 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:13
+11:59:43.589 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:59:43.593 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 4 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts-invalid
+11:59:43.595 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:19
+When method GET
+http call failed after 4 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts-invalid
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:19
+11:59:44.184 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+11:59:44.190 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5209/api/WeatherForecast
+1 > Host: localhost:5209
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:59:44.249 [main]  DEBUG com.intuit.karate - response time in milliseconds: 56
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 03:59:44 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":-1,"temperatureF":31,"summary":"Mild"},{"date":"2025-08-15","temperatureC":-13,"temperatureF":9,"summary":"Sweltering"},{"date":"2025-08-16","temperatureC":48,"temperatureF":118,"summary":"Cool"},{"date":"2025-08-17","temperatureC":42,"temperatureF":107,"summary":"Chilly"},{"date":"2025-08-18","temperatureC":-20,"temperatureF":-3,"summary":"Freezing"}]
+
+11:59:44.307 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+11:59:44.308 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:01:32.043 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+12:01:32.329 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755057692326
+12:01:33.387 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:01:33.438 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 270 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts
+12:01:33.441 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:5
+When method GET
+http call failed after 270 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:5
+12:01:33.450 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:01:33.454 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 5 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts
+12:01:33.455 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:13
+When method GET
+http call failed after 5 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:13
+12:01:33.461 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:01:33.463 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 3 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts-invalid
+12:01:33.463 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:19
+When method GET
+http call failed after 3 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts-invalid
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:19
+12:01:34.071 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+12:01:34.077 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5209/api/WeatherForecast
+1 > Host: localhost:5209
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:01:34.105 [main]  DEBUG com.intuit.karate - response time in milliseconds: 26
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:01:33 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":-14,"temperatureF":7,"summary":"Warm"},{"date":"2025-08-15","temperatureC":49,"temperatureF":120,"summary":"Bracing"},{"date":"2025-08-16","temperatureC":19,"temperatureF":66,"summary":"Freezing"},{"date":"2025-08-17","temperatureC":19,"temperatureF":66,"summary":"Warm"},{"date":"2025-08-18","temperatureC":-4,"temperatureF":25,"summary":"Mild"}]
+
+12:01:34.172 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+12:01:34.173 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:08:09.950 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+12:08:10.245 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755058090242
+12:08:11.318 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5209/api/inventory/low-stock-alerts
+1 > Host: localhost:5209
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:08:11.361 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 268 milliseconds for url: http://localhost:5209/api/inventory/low-stock-alerts
+12:08:11.364 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:5
+When method GET
+http call failed after 268 milliseconds for url: http://localhost:5209/api/inventory/low-stock-alerts
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:5
+12:08:11.375 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5209/api/inventory/low-stock-alerts
+1 > Host: localhost:5209
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:08:11.377 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 4 milliseconds for url: http://localhost:5209/api/inventory/low-stock-alerts
+12:08:11.378 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:13
+When method GET
+http call failed after 4 milliseconds for url: http://localhost:5209/api/inventory/low-stock-alerts
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:13
+12:08:11.395 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5209/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5209
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:08:11.400 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 6 milliseconds for url: http://localhost:5209/api/inventory/low-stock-alerts-invalid
+12:08:11.403 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:19
+When method GET
+http call failed after 6 milliseconds for url: http://localhost:5209/api/inventory/low-stock-alerts-invalid
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:19
+12:08:11.979 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+12:08:11.985 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5209/api/WeatherForecast
+1 > Host: localhost:5209
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:08:11.987 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 2 milliseconds for url: http://localhost:5209/api/WeatherForecast
+12:08:11.987 [main]  ERROR com.intuit.karate - src/WeatherForecast.feature:5
+When method get
+http call failed after 2 milliseconds for url: http://localhost:5209/api/WeatherForecast
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/WeatherForecast.feature:5
+12:08:12.031 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+12:08:12.033 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:08:33.581 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+12:08:33.879 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755058113876
+12:08:34.950 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5209/api/inventory/low-stock-alerts
+1 > Host: localhost:5209
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:08:34.972 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 235 milliseconds for url: http://localhost:5209/api/inventory/low-stock-alerts
+12:08:34.976 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:5
+When method GET
+http call failed after 235 milliseconds for url: http://localhost:5209/api/inventory/low-stock-alerts
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:5
+12:08:34.986 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5209/api/inventory/low-stock-alerts
+1 > Host: localhost:5209
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:08:34.991 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 6 milliseconds for url: http://localhost:5209/api/inventory/low-stock-alerts
+12:08:34.992 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:13
+When method GET
+http call failed after 6 milliseconds for url: http://localhost:5209/api/inventory/low-stock-alerts
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:13
+12:08:34.998 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5209/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5209
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:08:35.001 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 3 milliseconds for url: http://localhost:5209/api/inventory/low-stock-alerts-invalid
+12:08:35.002 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:19
+When method GET
+http call failed after 3 milliseconds for url: http://localhost:5209/api/inventory/low-stock-alerts-invalid
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:19
+12:08:35.609 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+12:08:35.615 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5209/api/WeatherForecast
+1 > Host: localhost:5209
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:08:35.618 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 4 milliseconds for url: http://localhost:5209/api/WeatherForecast
+12:08:35.618 [main]  ERROR com.intuit.karate - src/WeatherForecast.feature:5
+When method get
+http call failed after 4 milliseconds for url: http://localhost:5209/api/WeatherForecast
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/WeatherForecast.feature:5
+12:08:35.666 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+12:08:35.667 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:08:43.345 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+12:08:43.638 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755058123635
+12:08:44.707 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5209/api/inventory/low-stock-alerts
+1 > Host: localhost:5209
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:08:44.730 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 247 milliseconds for url: http://localhost:5209/api/inventory/low-stock-alerts
+12:08:44.733 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:5
+When method GET
+http call failed after 247 milliseconds for url: http://localhost:5209/api/inventory/low-stock-alerts
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:5
+12:08:44.744 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5209/api/inventory/low-stock-alerts
+1 > Host: localhost:5209
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:08:44.785 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 42 milliseconds for url: http://localhost:5209/api/inventory/low-stock-alerts
+12:08:44.785 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:13
+When method GET
+http call failed after 42 milliseconds for url: http://localhost:5209/api/inventory/low-stock-alerts
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:13
+12:08:44.791 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5209/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5209
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:08:44.833 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 43 milliseconds for url: http://localhost:5209/api/inventory/low-stock-alerts-invalid
+12:08:44.834 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:19
+When method GET
+http call failed after 43 milliseconds for url: http://localhost:5209/api/inventory/low-stock-alerts-invalid
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:19
+12:08:45.380 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+12:08:45.385 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5209/api/WeatherForecast
+1 > Host: localhost:5209
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:08:45.387 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 2 milliseconds for url: http://localhost:5209/api/WeatherForecast
+12:08:45.388 [main]  ERROR com.intuit.karate - src/WeatherForecast.feature:5
+When method get
+http call failed after 2 milliseconds for url: http://localhost:5209/api/WeatherForecast
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5209 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/WeatherForecast.feature:5
+12:08:45.429 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+12:08:45.431 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:10:42.715 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+12:10:43.011 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755058243009
+12:10:44.090 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:10:44.122 [main]  DEBUG com.intuit.karate - response time in milliseconds: 29
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:10:43 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":2,"productName":"Gadget","stock":2,"lowStockThreshold":3},{"productId":3,"productName":"Thingamajig","stock":1,"lowStockThreshold":3},{"productId":5,"productName":"Doohickey","stock":2,"lowStockThreshold":3}]
+
+12:10:44.188 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:7
+And match response == '#[0]' # Response is an array
+js failed:
+>>>>
+01: '#[0]' # Response is an array
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:7 Expected ; but found error
+'#[0]' # Response is an array
+       ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1841)
+- com.intuit.karate.core.ScenarioEngine.matchResult(ScenarioEngine.java:182)
+
+src/low-stock-alerts.feature:7
+12:10:44.199 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:10:44.202 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:10:43 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":4,"productName":"Doodad","stock":2,"lowStockThreshold":3}]
+
+12:10:44.237 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:15
+And match response == []
+match failed: EQUALS
+  $ | not equal | actual array length is not equal to expected - 1:0 (LIST:LIST)
+  [{"productId":4,"productName":"Doodad","stock":2,"lowStockThreshold":3}]
+  []
+
+
+src/low-stock-alerts.feature:15
+12:10:44.244 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:10:44.248 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 404
+1 < Content-Length: 0
+1 < Date: Wed, 13 Aug 2025 04:10:43 GMT
+1 < Server: Kestrel
+
+
+12:10:44.783 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+12:10:44.788 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:10:44.804 [main]  DEBUG com.intuit.karate - response time in milliseconds: 15
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:10:44 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":-18,"temperatureF":0,"summary":"Chilly"},{"date":"2025-08-15","temperatureC":15,"temperatureF":58,"summary":"Chilly"},{"date":"2025-08-16","temperatureC":35,"temperatureF":94,"summary":"Bracing"},{"date":"2025-08-17","temperatureC":-18,"temperatureF":0,"summary":"Scorching"},{"date":"2025-08-18","temperatureC":-18,"temperatureF":0,"summary":"Hot"}]
+
+12:10:44.853 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+12:10:44.854 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:11:06.253 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+12:11:06.547 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755058266544
+12:11:07.598 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:11:07.627 [main]  DEBUG com.intuit.karate - response time in milliseconds: 26
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:11:06 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":1,"productName":"Widget","stock":1,"lowStockThreshold":3},{"productId":2,"productName":"Gadget","stock":1,"lowStockThreshold":3}]
+
+12:11:07.702 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:8
+And match each response == { ProductId: '#number', ProductName: '#string', Stock: '#number', LowStockThreshold: '#number' }
+match failed: EACH_EQUALS
+  $ | match each failed at index 0 (LIST:MAP)
+  [{"productId":1,"productName":"Widget","stock":1,"lowStockThreshold":3},{"productId":2,"productName":"Gadget","stock":1,"lowStockThreshold":3}]
+  {"ProductId":"#number","ProductName":"#string","Stock":"#number","LowStockThreshold":"#number"}
+
+    $[0] | not equal | actual does not contain key - 'ProductId' (MAP:MAP)
+    {"productId":1,"productName":"Widget","stock":1,"lowStockThreshold":3}
+    {"ProductId":"#number","ProductName":"#string","Stock":"#number","LowStockThreshold":"#number"}
+
+
+src/low-stock-alerts.feature:8
+12:11:07.713 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:11:07.715 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:11:06 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":1,"productName":"Widget","stock":1,"lowStockThreshold":3}]
+
+12:11:07.722 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:11:07.725 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 404
+1 < Content-Length: 0
+1 < Date: Wed, 13 Aug 2025 04:11:06 GMT
+1 < Server: Kestrel
+
+
+12:11:08.278 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+12:11:08.284 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:11:08.287 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:11:07 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":23,"temperatureF":73,"summary":"Scorching"},{"date":"2025-08-15","temperatureC":43,"temperatureF":109,"summary":"Warm"},{"date":"2025-08-16","temperatureC":11,"temperatureF":51,"summary":"Bracing"},{"date":"2025-08-17","temperatureC":8,"temperatureF":46,"summary":"Warm"},{"date":"2025-08-18","temperatureC":2,"temperatureF":35,"summary":"Scorching"}]
+
+12:11:08.337 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+12:11:08.338 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:11:30.495 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+12:11:30.777 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755058290774
+12:11:31.849 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:11:31.877 [main]  DEBUG com.intuit.karate - response time in milliseconds: 25
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:11:31 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[]
+
+12:11:31.945 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:8
+And match each response == { productId: '#number', productName: '#string', stock: '#number', lowStockThreshold: '#number' }
+match failed: EACH_EQUALS
+  $ | match each failed, empty array / list (LIST:MAP)
+  []
+  {"productId":"#number","productName":"#string","stock":"#number","lowStockThreshold":"#number"}
+
+src/low-stock-alerts.feature:8
+12:11:31.956 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:11:31.960 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:11:31 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":1,"productName":"Widget","stock":2,"lowStockThreshold":3},{"productId":5,"productName":"Doohickey","stock":1,"lowStockThreshold":3}]
+
+12:11:31.968 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:11:31.971 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 404
+1 < Content-Length: 0
+1 < Date: Wed, 13 Aug 2025 04:11:31 GMT
+1 < Server: Kestrel
+
+
+12:11:32.543 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+12:11:32.549 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:11:32.551 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:11:32 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":43,"temperatureF":109,"summary":"Mild"},{"date":"2025-08-15","temperatureC":-9,"temperatureF":16,"summary":"Balmy"},{"date":"2025-08-16","temperatureC":21,"temperatureF":69,"summary":"Warm"},{"date":"2025-08-17","temperatureC":9,"temperatureF":48,"summary":"Balmy"},{"date":"2025-08-18","temperatureC":34,"temperatureF":93,"summary":"Cool"}]
+
+12:11:32.604 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+12:11:32.605 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:12:10.731 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+12:12:11.018 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755058331015
+12:12:12.080 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:12:12.108 [main]  DEBUG com.intuit.karate - response time in milliseconds: 25
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:12:11 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":1,"productName":"Widget","stock":2,"lowStockThreshold":3}]
+
+12:12:12.168 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:12:12.172 [main]  DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:12:11 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":3,"productName":"Thingamajig","stock":2,"lowStockThreshold":3}]
+
+12:12:12.175 [main]  DEBUG com.intuit.karate - request:
+2 > GET http://localhost:5000/api/inventory/low-stock-alerts
+2 > Host: localhost:5000
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+2 > Accept-Encoding: gzip,deflate
+
+
+12:12:12.180 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1
+2 < 200
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Wed, 13 Aug 2025 04:12:11 GMT
+2 < Server: Kestrel
+2 < Transfer-Encoding: chunked
+[{"productId":2,"productName":"Gadget","stock":1,"lowStockThreshold":3}]
+
+12:12:12.283 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:12:12.285 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 404
+1 < Content-Length: 0
+1 < Date: Wed, 13 Aug 2025 04:12:11 GMT
+1 < Server: Kestrel
+
+
+12:12:12.785 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+12:12:12.791 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:12:12.793 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:12:12 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":20,"temperatureF":67,"summary":"Warm"},{"date":"2025-08-15","temperatureC":22,"temperatureF":71,"summary":"Sweltering"},{"date":"2025-08-16","temperatureC":8,"temperatureF":46,"summary":"Warm"},{"date":"2025-08-17","temperatureC":22,"temperatureF":71,"summary":"Scorching"},{"date":"2025-08-18","temperatureC":27,"temperatureF":80,"summary":"Chilly"}]
+
+12:12:12.834 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+12:12:12.835 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:18:17.391 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+12:18:17.676 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755058697673
+12:18:18.713 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:18:18.835 [main]  DEBUG com.intuit.karate - response time in milliseconds: 119
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:18:18 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":2,"productName":"Gadget","stock":1,"lowStockThreshold":3},{"productId":5,"productName":"Doohickey","stock":2,"lowStockThreshold":3}]
+
+12:18:18.893 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:18:18.898 [main]  DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:18:18 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":2,"productName":"Gadget","stock":2,"lowStockThreshold":3}]
+
+12:18:18.915 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:13
+And match response == []
+match failed: EQUALS
+  $ | not equal | actual array length is not equal to expected - 1:0 (LIST:LIST)
+  [{"productId":2,"productName":"Gadget","stock":2,"lowStockThreshold":3}]
+  []
+
+
+src/low-stock-alerts.feature:13
+12:18:18.924 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:18:18.929 [main]  DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 404
+1 < Content-Length: 0
+1 < Date: Wed, 13 Aug 2025 04:18:18 GMT
+1 < Server: Kestrel
+
+
+12:18:19.588 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+12:18:19.594 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:18:19.610 [main]  DEBUG com.intuit.karate - response time in milliseconds: 15
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:18:19 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":18,"temperatureF":64,"summary":"Balmy"},{"date":"2025-08-15","temperatureC":3,"temperatureF":37,"summary":"Scorching"},{"date":"2025-08-16","temperatureC":-12,"temperatureF":11,"summary":"Scorching"},{"date":"2025-08-17","temperatureC":-16,"temperatureF":4,"summary":"Mild"},{"date":"2025-08-18","temperatureC":28,"temperatureF":82,"summary":"Sweltering"}]
+
+12:18:19.656 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+12:18:19.657 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:21:32.497 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+12:21:32.790 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755058892784
+12:21:33.830 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:21:33.859 [main]  DEBUG com.intuit.karate - response time in milliseconds: 26
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:21:33 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":4,"productName":"Doodad","stock":2,"lowStockThreshold":3}]
+
+12:21:33.917 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts?forceEmpty=true
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:21:33.920 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:21:33 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":1,"productName":"Widget","stock":2,"lowStockThreshold":3},{"productId":3,"productName":"Thingamajig","stock":2,"lowStockThreshold":3},{"productId":5,"productName":"Doohickey","stock":2,"lowStockThreshold":3}]
+
+12:21:33.941 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:13
+And match response == []
+match failed: EQUALS
+  $ | not equal | actual array length is not equal to expected - 3:0 (LIST:LIST)
+  [{"productId":1,"productName":"Widget","stock":2,"lowStockThreshold":3},{"productId":3,"productName":"Thingamajig","stock":2,"lowStockThreshold":3},{"productId":5,"productName":"Doohickey","stock":2,"lowStockThreshold":3}]
+  []
+
+
+src/low-stock-alerts.feature:13
+12:21:33.953 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:21:33.956 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 404
+1 < Content-Length: 0
+1 < Date: Wed, 13 Aug 2025 04:21:33 GMT
+1 < Server: Kestrel
+
+
+12:21:34.515 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+12:21:34.520 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:21:34.522 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:21:34 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":28,"temperatureF":82,"summary":"Cool"},{"date":"2025-08-15","temperatureC":-14,"temperatureF":7,"summary":"Warm"},{"date":"2025-08-16","temperatureC":52,"temperatureF":125,"summary":"Balmy"},{"date":"2025-08-17","temperatureC":49,"temperatureF":120,"summary":"Chilly"},{"date":"2025-08-18","temperatureC":16,"temperatureF":60,"summary":"Cool"}]
+
+12:21:34.574 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+12:21:34.575 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:26:58.527 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+12:26:58.802 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755059218799
+12:26:59.877 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:26:59.995 [main]  DEBUG com.intuit.karate - response time in milliseconds: 114
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:26:59 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":2,"productName":"Gadget","stock":2,"lowStockThreshold":3},{"productId":4,"productName":"Doodad","stock":2,"lowStockThreshold":3}]
+
+12:27:00.051 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts?threshold=0
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:27:00.068 [main]  DEBUG com.intuit.karate - response time in milliseconds: 17
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:26:59 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[]
+
+12:27:00.087 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:27:00.091 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 404
+1 < Content-Length: 0
+1 < Date: Wed, 13 Aug 2025 04:26:59 GMT
+1 < Server: Kestrel
+
+
+12:27:00.665 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+12:27:00.671 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:27:00.688 [main]  DEBUG com.intuit.karate - response time in milliseconds: 16
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:26:59 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":-14,"temperatureF":7,"summary":"Balmy"},{"date":"2025-08-15","temperatureC":-12,"temperatureF":11,"summary":"Balmy"},{"date":"2025-08-16","temperatureC":19,"temperatureF":66,"summary":"Chilly"},{"date":"2025-08-17","temperatureC":52,"temperatureF":125,"summary":"Balmy"},{"date":"2025-08-18","temperatureC":12,"temperatureF":53,"summary":"Mild"}]
+
+12:27:00.739 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+12:27:00.739 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:30:15.912 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+12:30:16.192 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755059416189
+12:30:17.236 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:30:17.266 [main]  DEBUG com.intuit.karate - response time in milliseconds: 28
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:30:16 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":1,"productName":"Widget","stock":2,"lowStockThreshold":3},{"productId":2,"productName":"Gadget","stock":2,"lowStockThreshold":3}]
+
+12:30:17.328 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts?threshold=0
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:30:17.333 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:30:17 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":2,"productName":"Gadget","stock":2,"lowStockThreshold":3},{"productId":5,"productName":"Doohickey","stock":2,"lowStockThreshold":3}]
+
+12:30:17.352 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:13
+And match response == []
+match failed: EQUALS
+  $ | not equal | actual array length is not equal to expected - 2:0 (LIST:LIST)
+  [{"productId":2,"productName":"Gadget","stock":2,"lowStockThreshold":3},{"productId":5,"productName":"Doohickey","stock":2,"lowStockThreshold":3}]
+  []
+
+
+src/low-stock-alerts.feature:13
+12:30:17.361 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:30:17.364 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 404
+1 < Content-Length: 0
+1 < Date: Wed, 13 Aug 2025 04:30:17 GMT
+1 < Server: Kestrel
+
+
+12:30:17.922 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+12:30:17.927 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:30:17.930 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:30:17 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":-14,"temperatureF":7,"summary":"Sweltering"},{"date":"2025-08-15","temperatureC":23,"temperatureF":73,"summary":"Mild"},{"date":"2025-08-16","temperatureC":45,"temperatureF":112,"summary":"Mild"},{"date":"2025-08-17","temperatureC":27,"temperatureF":80,"summary":"Sweltering"},{"date":"2025-08-18","temperatureC":33,"temperatureF":91,"summary":"Freezing"}]
+
+12:30:17.985 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+12:30:17.985 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:32:56.196 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+12:32:56.484 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755059576481
+12:32:57.558 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:32:57.589 [main]  DEBUG com.intuit.karate - response time in milliseconds: 28
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:32:56 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[]
+
+12:32:57.652 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:32:57.656 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:32:57 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[]
+
+12:32:57.684 [main]  DEBUG com.intuit.karate - request:
+2 > GET http://localhost:5000/api/inventory/low-stock-alerts
+2 > Host: localhost:5000
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+2 > Accept-Encoding: gzip,deflate
+
+
+12:32:57.686 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+2 < 200
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Wed, 13 Aug 2025 04:32:57 GMT
+2 < Server: Kestrel
+2 < Transfer-Encoding: chunked
+[]
+
+12:32:57.690 [main]  DEBUG com.intuit.karate - request:
+3 > GET http://localhost:5000/api/inventory/low-stock-alerts
+3 > Host: localhost:5000
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+3 > Accept-Encoding: gzip,deflate
+
+
+12:32:57.693 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+3 < 200
+3 < Content-Type: application/json; charset=utf-8
+3 < Date: Wed, 13 Aug 2025 04:32:57 GMT
+3 < Server: Kestrel
+3 < Transfer-Encoding: chunked
+[{"productId":2,"productName":"Gadget","stock":1,"lowStockThreshold":3}]
+
+12:32:57.755 [main]  INFO  com.intuit.karate - Success! At least one call returned empty array 
+12:32:57.779 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:33
+* if (!gotEmptyResult) match response[0] == { productId: '#number', productName: '#string', stock: '#number', lowStockThreshold: '#number' }
+js failed:
+>>>>
+01: if (!gotEmptyResult) match response[0] == { productId: '#number', productName: '#string', stock: '#number', lowStockThreshold: '#number' }
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:27 Expected ; but found response
+if (!gotEmptyResult) match response[0] == { productId: '#number', productName: '#string', stock: '#number', lowStockThreshold: '#number' }
+                           ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.ScenarioActions.evalIf(ScenarioActions.java:378)
+- java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+- java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+src/low-stock-alerts.feature:33
+12:32:57.811 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:32:57.814 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1
+1 < 404
+1 < Content-Length: 0
+1 < Date: Wed, 13 Aug 2025 04:32:57 GMT
+1 < Server: Kestrel
+
+
+12:32:58.455 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+12:32:58.461 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:32:58.463 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:32:57 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":-11,"temperatureF":13,"summary":"Chilly"},{"date":"2025-08-15","temperatureC":53,"temperatureF":127,"summary":"Mild"},{"date":"2025-08-16","temperatureC":13,"temperatureF":55,"summary":"Scorching"},{"date":"2025-08-17","temperatureC":3,"temperatureF":37,"summary":"Bracing"},{"date":"2025-08-18","temperatureC":45,"temperatureF":112,"summary":"Cool"}]
+
+12:32:58.501 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+12:32:58.502 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:33:05.993 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+12:33:06.274 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755059586272
+12:33:07.344 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:33:07.371 [main]  DEBUG com.intuit.karate - response time in milliseconds: 26
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:33:06 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":1,"productName":"Widget","stock":1,"lowStockThreshold":3}]
+
+12:33:07.428 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:33:07.430 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:33:06 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[]
+
+12:33:07.457 [main]  DEBUG com.intuit.karate - request:
+2 > GET http://localhost:5000/api/inventory/low-stock-alerts
+2 > Host: localhost:5000
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+2 > Accept-Encoding: gzip,deflate
+
+
+12:33:07.460 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+2 < 200
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Wed, 13 Aug 2025 04:33:06 GMT
+2 < Server: Kestrel
+2 < Transfer-Encoding: chunked
+[{"productId":1,"productName":"Widget","stock":1,"lowStockThreshold":3},{"productId":3,"productName":"Thingamajig","stock":2,"lowStockThreshold":3},{"productId":4,"productName":"Doodad","stock":1,"lowStockThreshold":3}]
+
+12:33:07.464 [main]  DEBUG com.intuit.karate - request:
+3 > GET http://localhost:5000/api/inventory/low-stock-alerts
+3 > Host: localhost:5000
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+3 > Accept-Encoding: gzip,deflate
+
+
+12:33:07.467 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+3 < 200
+3 < Content-Type: application/json; charset=utf-8
+3 < Date: Wed, 13 Aug 2025 04:33:06 GMT
+3 < Server: Kestrel
+3 < Transfer-Encoding: chunked
+[{"productId":1,"productName":"Widget","stock":2,"lowStockThreshold":3},{"productId":4,"productName":"Doodad","stock":1,"lowStockThreshold":3},{"productId":5,"productName":"Doohickey","stock":1,"lowStockThreshold":3}]
+
+12:33:07.521 [main]  INFO  com.intuit.karate - Success! At least one call returned empty array 
+12:33:07.545 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:33
+* if (!gotEmptyResult) match response[0] == { productId: '#number', productName: '#string', stock: '#number', lowStockThreshold: '#number' }
+js failed:
+>>>>
+01: if (!gotEmptyResult) match response[0] == { productId: '#number', productName: '#string', stock: '#number', lowStockThreshold: '#number' }
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:27 Expected ; but found response
+if (!gotEmptyResult) match response[0] == { productId: '#number', productName: '#string', stock: '#number', lowStockThreshold: '#number' }
+                           ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.ScenarioActions.evalIf(ScenarioActions.java:378)
+- java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+- java.base/java.lang.reflect.Method.invoke(Method.java:580)
+
+src/low-stock-alerts.feature:33
+12:33:07.553 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:33:07.556 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1
+1 < 404
+1 < Content-Length: 0
+1 < Date: Wed, 13 Aug 2025 04:33:06 GMT
+1 < Server: Kestrel
+
+
+12:33:08.045 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+12:33:08.050 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:33:08.053 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:33:07 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":50,"temperatureF":121,"summary":"Mild"},{"date":"2025-08-15","temperatureC":51,"temperatureF":123,"summary":"Balmy"},{"date":"2025-08-16","temperatureC":10,"temperatureF":49,"summary":"Warm"},{"date":"2025-08-17","temperatureC":45,"temperatureF":112,"summary":"Hot"},{"date":"2025-08-18","temperatureC":22,"temperatureF":71,"summary":"Sweltering"}]
+
+12:33:08.098 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+12:33:08.099 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+12:36:38.580 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+12:36:38.861 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755059798859
+12:36:39.908 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:36:40.032 [main]  DEBUG com.intuit.karate - response time in milliseconds: 121
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:36:39 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[]
+
+12:36:40.088 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts?threshold=0
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:36:40.102 [main]  DEBUG com.intuit.karate - response time in milliseconds: 12
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:36:39 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[]
+
+12:36:40.120 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:36:40.124 [main]  DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 404
+1 < Content-Length: 0
+1 < Date: Wed, 13 Aug 2025 04:36:39 GMT
+1 < Server: Kestrel
+
+
+12:36:40.678 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+12:36:40.683 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:36:40.701 [main]  DEBUG com.intuit.karate - response time in milliseconds: 17
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 04:36:39 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":-7,"temperatureF":20,"summary":"Warm"},{"date":"2025-08-15","temperatureC":5,"temperatureF":40,"summary":"Freezing"},{"date":"2025-08-16","temperatureC":-4,"temperatureF":25,"summary":"Warm"},{"date":"2025-08-17","temperatureC":45,"temperatureF":112,"summary":"Sweltering"},{"date":"2025-08-18","temperatureC":41,"temperatureF":105,"summary":"Hot"}]
+
+12:36:40.742 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+12:36:40.743 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+14:23:30.511 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+14:23:30.789 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755066210787
+14:23:31.832 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:23:31.960 [main]  DEBUG com.intuit.karate - response time in milliseconds: 125
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 06:23:31 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[]
+
+14:23:32.015 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts?threshold=0
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:23:32.024 [main]  DEBUG com.intuit.karate - response time in milliseconds: 8
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 06:23:31 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[]
+
+14:23:32.043 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:23:32.057 [main]  DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 404
+1 < Content-Length: 0
+1 < Date: Wed, 13 Aug 2025 06:23:31 GMT
+1 < Server: Kestrel
+
+
+14:23:32.568 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+14:23:32.573 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:23:32.590 [main]  DEBUG com.intuit.karate - response time in milliseconds: 16
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 06:23:31 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":39,"temperatureF":102,"summary":"Mild"},{"date":"2025-08-15","temperatureC":42,"temperatureF":107,"summary":"Cool"},{"date":"2025-08-16","temperatureC":13,"temperatureF":55,"summary":"Warm"},{"date":"2025-08-17","temperatureC":-12,"temperatureF":11,"summary":"Scorching"},{"date":"2025-08-18","temperatureC":30,"temperatureF":85,"summary":"Warm"}]
+
+14:23:32.636 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+14:23:32.636 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+14:27:51.172 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+14:27:51.466 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755066471463
+14:27:52.499 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:27:52.533 [main]  DEBUG com.intuit.karate - response time in milliseconds: 31
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 06:27:51 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":4,"productName":"Doodad","stock":1,"lowStockThreshold":3}]
+
+14:27:52.591 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts?threshold=0
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:27:52.595 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 06:27:51 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[]
+
+14:27:52.613 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:27:52.616 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1
+1 < 404
+1 < Content-Length: 0
+1 < Date: Wed, 13 Aug 2025 06:27:51 GMT
+1 < Server: Kestrel
+
+
+14:27:53.174 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+14:27:53.179 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:27:53.182 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 06:27:53 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":18,"temperatureF":64,"summary":"Hot"},{"date":"2025-08-15","temperatureC":-16,"temperatureF":4,"summary":"Cool"},{"date":"2025-08-16","temperatureC":40,"temperatureF":103,"summary":"Scorching"},{"date":"2025-08-17","temperatureC":41,"temperatureF":105,"summary":"Cool"},{"date":"2025-08-18","temperatureC":54,"temperatureF":129,"summary":"Balmy"}]
+
+14:27:53.229 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+14:27:53.230 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+15:38:31.969 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+15:38:32.256 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755070712254
+15:38:33.310 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:38:33.340 [main]  DEBUG com.intuit.karate - response time in milliseconds: 27
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 07:38:33 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":2,"productName":"Gadget","stock":0,"lowStockThreshold":3}]
+
+15:38:33.411 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts?threshold=0
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:38:33.414 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 07:38:33 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[]
+
+15:38:33.431 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:38:33.434 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 404
+1 < Content-Length: 0
+1 < Date: Wed, 13 Aug 2025 07:38:33 GMT
+1 < Server: Kestrel
+
+
+15:38:34.051 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+15:38:34.056 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:38:34.059 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 07:38:33 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":40,"temperatureF":103,"summary":"Bracing"},{"date":"2025-08-15","temperatureC":4,"temperatureF":39,"summary":"Scorching"},{"date":"2025-08-16","temperatureC":2,"temperatureF":35,"summary":"Hot"},{"date":"2025-08-17","temperatureC":39,"temperatureF":102,"summary":"Bracing"},{"date":"2025-08-18","temperatureC":0,"temperatureF":32,"summary":"Chilly"}]
+
+15:38:34.105 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+15:38:34.106 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+16:08:56.258 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+16:08:56.552 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755072536549
+16:08:57.622 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:08:57.646 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 252 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts
+16:08:57.649 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:5
+When method GET
+http call failed after 252 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:5
+16:08:57.664 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts?threshold=0
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:08:57.683 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 20 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts?threshold=0
+16:08:57.686 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:11
+When method GET
+http call failed after 20 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts?threshold=0
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:11
+16:08:57.692 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:08:57.694 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 3 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts-invalid
+16:08:57.695 [main]  ERROR com.intuit.karate - src/low-stock-alerts.feature:17
+When method GET
+http call failed after 3 milliseconds for url: http://localhost:5000/api/inventory/low-stock-alerts-invalid
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/low-stock-alerts.feature:17
+16:08:58.420 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+16:08:58.426 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:08:58.448 [main]  ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 23 milliseconds for url: http://localhost:5000/api/WeatherForecast
+16:08:58.449 [main]  ERROR com.intuit.karate - src/WeatherForecast.feature:5
+When method get
+http call failed after 23 milliseconds for url: http://localhost:5000/api/WeatherForecast
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:5000 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+src/WeatherForecast.feature:5
+16:08:58.496 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+16:08:58.496 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+16:12:03.797 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+16:12:04.082 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755072724080
+16:12:05.140 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:12:05.359 [main]  DEBUG com.intuit.karate - response time in milliseconds: 216
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 08:12:04 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":4,"productName":"Doodad","stock":0,"lowStockThreshold":3}]
+
+16:12:05.416 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts?threshold=0
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:12:05.425 [main]  DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 08:12:04 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[]
+
+16:12:05.441 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:12:05.447 [main]  DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 404
+1 < Content-Length: 0
+1 < Date: Wed, 13 Aug 2025 08:12:04 GMT
+1 < Server: Kestrel
+
+
+16:12:06.013 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+16:12:06.019 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:12:06.034 [main]  DEBUG com.intuit.karate - response time in milliseconds: 14
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 08:12:05 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":8,"temperatureF":46,"summary":"Bracing"},{"date":"2025-08-15","temperatureC":7,"temperatureF":44,"summary":"Hot"},{"date":"2025-08-16","temperatureC":40,"temperatureF":103,"summary":"Hot"},{"date":"2025-08-17","temperatureC":2,"temperatureF":35,"summary":"Mild"},{"date":"2025-08-18","temperatureC":31,"temperatureF":87,"summary":"Scorching"}]
+
+16:12:06.079 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+16:12:06.080 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+16:15:05.836 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+16:15:06.127 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755072906124
+16:15:07.222 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:15:07.358 [main]  DEBUG com.intuit.karate - response time in milliseconds: 132
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 08:15:06 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":3,"productName":"Thingamajig","stock":2,"lowStockThreshold":3}]
+
+16:15:07.419 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts?threshold=0
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:15:07.427 [main]  DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 08:15:06 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[]
+
+16:15:07.445 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:15:07.451 [main]  DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 404
+1 < Content-Length: 0
+1 < Date: Wed, 13 Aug 2025 08:15:06 GMT
+1 < Server: Kestrel
+
+
+16:15:08.013 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+16:15:08.019 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:15:08.035 [main]  DEBUG com.intuit.karate - response time in milliseconds: 14
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 08:15:07 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":12,"temperatureF":53,"summary":"Mild"},{"date":"2025-08-15","temperatureC":35,"temperatureF":94,"summary":"Mild"},{"date":"2025-08-16","temperatureC":-9,"temperatureF":16,"summary":"Hot"},{"date":"2025-08-17","temperatureC":-5,"temperatureF":24,"summary":"Hot"},{"date":"2025-08-18","temperatureC":39,"temperatureF":102,"summary":"Cool"}]
+
+16:15:08.079 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+16:15:08.080 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+16:23:32.814 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+16:23:33.106 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755073413103
+16:23:34.151 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:23:34.284 [main]  DEBUG com.intuit.karate - response time in milliseconds: 130
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 08:23:34 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":1,"productName":"Widget","stock":0,"lowStockThreshold":3},{"productId":2,"productName":"Gadget","stock":0,"lowStockThreshold":3}]
+
+16:23:34.343 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts?threshold=0
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:23:34.352 [main]  DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 08:23:34 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[]
+
+16:23:34.370 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:23:34.375 [main]  DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 404
+1 < Content-Length: 0
+1 < Date: Wed, 13 Aug 2025 08:23:34 GMT
+1 < Server: Kestrel
+
+
+16:23:34.908 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+16:23:34.914 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:23:34.930 [main]  DEBUG com.intuit.karate - response time in milliseconds: 15
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 08:23:34 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":25,"temperatureF":76,"summary":"Scorching"},{"date":"2025-08-15","temperatureC":17,"temperatureF":62,"summary":"Sweltering"},{"date":"2025-08-16","temperatureC":-18,"temperatureF":0,"summary":"Freezing"},{"date":"2025-08-17","temperatureC":8,"temperatureF":46,"summary":"Mild"},{"date":"2025-08-18","temperatureC":32,"temperatureF":89,"summary":"Scorching"}]
+
+16:23:34.972 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+16:23:34.973 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+17:09:34.119 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+17:09:34.432 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755076174429
+17:09:35.646 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:09:35.817 [main]  DEBUG com.intuit.karate - response time in milliseconds: 166
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 09:09:35 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":3,"productName":"Thingamajig","stock":1,"lowStockThreshold":3},{"productId":4,"productName":"Doodad","stock":1,"lowStockThreshold":3}]
+
+17:09:35.879 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts?threshold=0
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:09:35.888 [main]  DEBUG com.intuit.karate - response time in milliseconds: 8
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 09:09:35 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[]
+
+17:09:35.906 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:09:35.910 [main]  DEBUG com.intuit.karate - response time in milliseconds: 4
+1 < 404
+1 < Content-Length: 0
+1 < Date: Wed, 13 Aug 2025 09:09:35 GMT
+1 < Server: Kestrel
+
+
+17:09:36.529 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+17:09:36.537 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:09:36.555 [main]  DEBUG com.intuit.karate - response time in milliseconds: 16
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 09:09:36 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":9,"temperatureF":48,"summary":"Scorching"},{"date":"2025-08-15","temperatureC":-12,"temperatureF":11,"summary":"Bracing"},{"date":"2025-08-16","temperatureC":42,"temperatureF":107,"summary":"Scorching"},{"date":"2025-08-17","temperatureC":44,"temperatureF":111,"summary":"Scorching"},{"date":"2025-08-18","temperatureC":-18,"temperatureF":0,"summary":"Freezing"}]
+
+17:09:36.608 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+17:09:36.609 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+17:14:23.357 [main]  INFO  com.intuit.karate - Karate version: 1.4.1
+17:14:23.670 [main]  INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1755076463667
+17:14:24.839 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:14:24.998 [main]  DEBUG com.intuit.karate - response time in milliseconds: 155
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 09:14:24 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"productId":3,"productName":"Thingamajig","stock":1,"lowStockThreshold":3},{"productId":5,"productName":"Doohickey","stock":0,"lowStockThreshold":3}]
+
+17:14:25.060 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts?threshold=0
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:14:25.074 [main]  DEBUG com.intuit.karate - response time in milliseconds: 13
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 09:14:24 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[]
+
+17:14:25.092 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/inventory/low-stock-alerts-invalid
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:14:25.096 [main]  DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 404
+1 < Content-Length: 0
+1 < Date: Wed, 13 Aug 2025 09:14:24 GMT
+1 < Server: Kestrel
+
+
+17:14:25.687 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (0 remaining) src/low-stock-alerts.feature
+17:14:25.695 [main]  DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/api/WeatherForecast
+1 > Host: localhost:5000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:14:25.715 [main]  DEBUG com.intuit.karate - response time in milliseconds: 20
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 13 Aug 2025 09:14:24 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"date":"2025-08-14","temperatureC":45,"temperatureF":112,"summary":"Scorching"},{"date":"2025-08-15","temperatureC":23,"temperatureF":73,"summary":"Balmy"},{"date":"2025-08-16","temperatureC":15,"temperatureF":58,"summary":"Scorching"},{"date":"2025-08-17","temperatureC":40,"temperatureF":103,"summary":"Cool"},{"date":"2025-08-18","temperatureC":19,"temperatureF":66,"summary":"Cool"}]
+
+17:14:25.772 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) src/WeatherForecast.feature
+17:14:25.775 [main]  DEBUG com.intuit.karate.Suite - waiting for 2 features to complete

@@ -40,7 +40,6 @@
     <Folder Include="Models\" />
     <Folder Include="TestHelpers\" />
     <Folder Include="Utilities\" />
-    <Folder Include="Services\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
 
