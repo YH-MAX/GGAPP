@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
+using GGAppBackend.Models;
 
-namespace QPAppBackend.Data
+namespace GGAppBackend.Data
 {
     public class AppDbContext : DbContext
     {
@@ -10,12 +10,8 @@ namespace QPAppBackend.Data
         {
         }
 
-        public DbSet<YourEntity> YourEntities { get; set; }
-    }
-
-    public class YourEntity
-    {
-        public int Id { get; set; }
-        public required string Name { get; set; }
+        // Add InventoryItems DbSet for Low Stock Alert feature
+        public DbSet<InventoryItem> InventoryItems { get; set; }
     }
 }
+    
