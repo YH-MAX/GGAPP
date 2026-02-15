@@ -19,16 +19,13 @@ namespace GGAppBackend.Services
                 .Where(item => item.Quantity <= item.ReorderLevel)
                 .Select(item => new LowStockItemReqDto
                 {
-                    id = item.Id,
-                    itemName = item.ItemName,
-                    category = item.Category,
-                    quantityLeft = item.Quantity,
-                    reorderLevel = item.ReorderLevel,
-                    status = item.Quantity <= item.ReorderLevel * 0.5m
-                        ? "Critical"
-                        : "Warning"
+                    ProductId = item.Id,
+                    ProductName = item.ItemName,
+                    StockLevel = item.Quantity,
+                    LowStockThreshold = item.ReorderLevel
+                    
                 })
-                .OrderBy(x => x.quantityLeft)
+                .Where(item => item.StockLevel <= item.LowStockThreshold)
                 .ToListAsync();
         }
     }

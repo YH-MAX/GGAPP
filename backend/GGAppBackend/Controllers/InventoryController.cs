@@ -7,21 +7,21 @@ namespace GGAppBackend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class LowStockAlertController : ControllerBase
+    public class InventoryController: ControllerBase
     {
         #region Variable Declaration
         private readonly IInventoryService _lowStockAlertService;
         #endregion
 
         #region Constructor
-        public LowStockAlertController(IInventoryService lowStockAlertService)
+        public InventoryController(IInventoryService inventoryService)
         {
-            _lowStockAlertService = lowStockAlertService;
+            _lowStockAlertService = inventoryService;
         }
         #endregion
 
         #region Methods
-        [HttpGet("lowstock")]
+        [HttpGet("low-stock-alerts")]
         public async Task<IActionResult> GetLowStockItems()
         {
             try

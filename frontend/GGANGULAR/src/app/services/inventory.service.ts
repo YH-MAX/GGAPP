@@ -1,14 +1,18 @@
-import { Injectable, signal } from '@angular/core';
+import { Injectable, signal, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { catchError, finalize } from 'rxjs/operators';
 import { of } from 'rxjs';
-import { LowStockAlert } from '../src/app/models/low-stock-alert.ts';
+import { LowStockAlert } from '../models/low-stock-alert';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class InventoryService {
-  private readonly http = HttpClient.inject(HttpClient);
+  private readonly http = inject(HttpClient);
+  
+  // API Configuration
+  private readonly apiUrl = 'http://localhost:5209/api/inventory/low-stock-alerts';
   
   // Signals for reactive state management
   private readonly _alerts = signal<LowStockAlert[]>([]);
@@ -23,8 +27,8 @@ export class InventoryService {
   getLowStockAlerts(): void {
     this._isLoading.set(true);
     this._error.set(null);
-    
-    this.http.get<LowStockAlert[]>('/api/inventory/low-stock-alerts')
+
+    this.http.get<LowStockAlert[]>(this.apiUrl)
       .pipe(
         catchError(error => {
           console.error('Error fetching low stock alerts:', error);

@@ -12,6 +12,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseInMemoryDatabase("LowStockAlertDb"));
 
+// Register services
+builder.Services.AddScoped<IInventoryService, InventoryService>();
+
 // Configure CORS
 builder.Services.AddCors(options =>
 {

@@ -11,3 +11,4 @@ namespace QPAppBackend.Models
         public string? Summary { get; set; }
     }
 }
+
